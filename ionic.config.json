@@ -1,0 +1,7 @@
+{
+  "name": "The-Fear-Night",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
