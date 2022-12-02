@@ -9,4 +9,12 @@ export class Tab3Page {
 
   constructor() {}
 
-}
+  toggleTheme(event: any){
+    if(event.detail.checked){
+      document.body.setAttribute('color-theme','dark');
+    }else{
+        document.body.setAttribute('color-theme','light');
+    }
+    }
+  }
+

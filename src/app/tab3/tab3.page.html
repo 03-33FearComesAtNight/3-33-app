@@ -1,12 +1,33 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="light" class="ion-padding">
+  <ion-item>
+    <ion-label>Dark Mode</ion-label>
+    <ion-toggle slot="end" (ionChange)='toggleTheme( $event )'></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>Idioma</ion-label>
+    <ion-select placeholder="Selecciona">
+      <ion-select-option value="">Idioma No Seleccionado</ion-select-option>
+      <ion-select-option value="Español">Español</ion-select-option>
+      <ion-select-option value="Ingles">Ingles</ion-select-option>
+      <ion-select-option value="Frances">Frances</ion-select-option>
+      <ion-select-option value="Japones">Japones</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-range>
+      <ion-icon slot="start" name="snow-outline"></ion-icon>
+      <ion-icon slot="end" name="sunny-outline"></ion-icon>
+    </ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label [routerLink]="['/noticias']">noticias</ion-label>
+  </ion-item>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
